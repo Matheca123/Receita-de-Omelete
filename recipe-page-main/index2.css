@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 251, 227);
+    color: rgb(32, 5, 5);
+    min-height: 100vh;
+    font-family: 'Outfit',sans-serif;
+    line-height: 1.4;
+    display: grid;
+    place-content: center;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+}
+
+h1, h2{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+h1{
+    color: rgb(37, 37, 37);
+    font-size: 2.8rem;
+}
+
+h2{
+    color: rgb(56, 37, 37);
+    margin-bottom: 1rem;
+}
+
+.recipe-step{
+    margin: 1rem 0;
+}
+
+.nutririon-step{
+    margin: 1rem;
+}
+
+ul{
+    padding-left: 1.25rem;
+}
+
+ul li::marker{
+    color: rgb(56, 37, 37);
+    font-weight: bold;
+}
+
+ul li {
+    margin-bottom:  .5rem;
+}
+
+ul li span {
+    color: rgb(37, 37, 37);
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+.structions .item{
+    padding-left: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+}
+
+.structions .item p span {
+    font-weight: 700;
+}
+
+.structions .item .num{
+    color:rgb(56, 37, 37);
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.conteiner{
+    max-width: 800px;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+.conteiner .recipe-img{
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.conteiner .recipe-img img{
+    border-radius: 1rem;
+}
+
+.recipe-information{
+    margin: 1rem;
+}
+
+.recipe-prep-time{
+    background-color:blanchedalmond;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.ingredients li span{
+    font-weight: initial;
+}
+
+.structions .item{
+    padding-left: 1rem;
+    margin-bottom: 5rem;
+    display: flex;
+}
+
+.intructions .item .num{
+    margin-right: 1rem;
+    color: brown;
+    font-weight: 700;
+}
+
+.intructions .item p span{
+    font-weight: 700;
+}
+
+.nutrition-step .values{
+    margin-bottom: 1rem;
+}
+
+.nutririon-table .item{
+    padding: .75rem 2rem;
+    display: flex;
+    transition: all 300ms ease;
+    border-bottom: 1px solid var(brown);
+}
+
+.nutririon-table .item:last-child{
+    border-bottom: 0;
+}
+
+.nutririon-table .item p:nth-child(2){
+    color: var(brown);
+    font-weight: 700;
+}
+
+.nutririon-table .item > *{
+    width: 100px;
+    margin-right: auto;
+}
+
+@media (max-width:540px){
+    h1 {
+        margin-top: 2rem;
+    }
+
+    .conteiner{
+        margin: 0;
+    }
+    .conteiner .recipe-img{
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .conteiner .recipe-img img{
+        border-radius: 0;
+    }
+}
