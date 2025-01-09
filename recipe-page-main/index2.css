@@ -59,6 +59,8 @@ ul li span {
     color: rgb(37, 37, 37);
     margin-left: 1rem;
     font-weight: 700;
+    transition: all 300ms ease;
+    display: flex;
 }
 
 .structions .item{
